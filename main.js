@@ -1,5 +1,6 @@
 const imageContainer = document.getElementById("image-container");
 const loader = document.getElementById("loader");
+const goToTopButton = document.getElementById("go-to-top");
 let photosArray = [];
 
 let readyToLoadMore = false;
@@ -98,6 +99,17 @@ window.addEventListener("scroll", () => {
     getPhotos();
   }
 });
+
+// scroll to top
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+goToTopButton.addEventListener("click", scrollToTop);
 
 // onLoad
 getPhotos();

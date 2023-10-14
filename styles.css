@@ -67,6 +67,20 @@ h1:after {
   border-radius: 16px;
 }
 
+#go-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color1);
+  color: white;
+  padding: 8px;
+  margin: 32px;
+  border-radius: 16px;
+  /* width: 100%;
+  height: 100%; */
+  border: none;
+}
+
 /* Media Query: Until 768px */
 
 @media screen and (max-width: 768px) {
